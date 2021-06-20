@@ -19,7 +19,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 ```json
 
 {
-        "email": "email addresss", 
+        "email": "email address", 
         "password": "a very secure password"
     }
 ```
@@ -128,7 +128,7 @@ To πρόγραμμα ελέγχει αν το json αρχείο είναι στ
     "stock" : "3"
 }
    ```
-Δικαίωμα προσθεσης έχει αποκλειστικά χρήστης που έχει κάνει admin πρώτα και έχει προστέσει το uuid του ως header στο "authorization". Διαφορετικά, το /addProducts δεν θα λειτουργήσει.
+Δικαίωμα προσθεσης έχει αποκλειστικά admin που πρώτα έχει προστέσει το uuid του ως header στο "authorization". Διαφορετικά, το /addProducts δεν θα λειτουργήσει.
 
 ## /removeid
 
@@ -139,7 +139,7 @@ To πρόγραμμα ελέγχει αν το json αρχείο είναι στ
    "_id" : "something" 
 }
    ```
-Δικαίωμα προσθεσης έχει αποκλειστικά χρήστης που έχει κάνει admin πρώτα και έχει προστέσει το uuid του ως header στο "authorization". Διαφορετικά, το /removeid δεν θα λειτουργήσει.
+Δικαίωμα διαγραφής έχει αποκλειστικά admin που πρώτα έχει προστέσει το uuid του ως header στο "authorization". Διαφορετικά, το /removeid δεν θα λειτουργήσει.
 
 
 ## /patchproducts
@@ -156,4 +156,4 @@ To πρόγραμμα ελέγχει αν το json αρχείο είναι στ
     "stock" : "3"
 }
    ```
-Δικαίωμα προσθεσης έχει αποκλειστικά χρήστης που έχει κάνει admin πρώτα και έχει προστέσει το uuid του ως header στο "authorization". Διαφορετικά, το /patchproductsδεν θα λειτουργήσει.
+Δικαίωμα τροποποίησης έχει αποκλειστικά admin που πρώτα έχει προστέσει το uuid του ως header στο "authorization". Διαφορετικά, το /patchproductsδεν θα λειτουργήσει.
