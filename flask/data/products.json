@@ -1,0 +1,32 @@
+{
+    "name" : "Xiaomi Mi Max 2" ,
+    "price" : "209.0" ,
+    "description" : "Nice Phone" ,
+    "category" : " Cellphone",
+    "stock" : "3"
+}
+
+
+{
+    "name" : "Xiaomi Mi Max 3" ,
+    "price" : "292.0" ,
+    "description" : "Nice Phone" ,
+    "category" : " Cellphone",
+    "stock" : "2"
+}
+
+{
+    "name" : "Google Pixel" ,
+    "price" : "700.0" ,
+    "description" : "Nice Phone" ,
+    "category" : " Cellphone",
+    "stock" : "4"
+}
+
+{
+    "name" : "Sony Xperia M" ,
+    "price" : "85.0" ,
+    "description" : "Nice Phone" ,
+    "category" : " Cellphone",
+    "stock" : "2"
+}

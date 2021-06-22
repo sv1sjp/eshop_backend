@@ -1,0 +1,28 @@
+{
+    "name" : "DimitrisV" ,
+    "email" : "dimitrislinuxos@gmail.com" ,
+    "password" : "minisc" ,
+    "category" : "admin"  
+   }
+   
+   
+{
+    "name" : "natalie" ,
+    "email" : "natalie2@gmail.com" ,
+    "password" : "mic" ,
+    "category" : "user"  
+   }
+   
+{
+    "name" : "koukos" ,
+    "email" : "koukos1@gmail.com" ,
+    "password" : "1111" ,
+    "category" : "user"  
+   }
+   
+{
+    "name" : "admin" ,
+    "email" : "admin@gmail.com" ,
+    "password" : "1234" ,
+    "category" : "admin"  
+   }
