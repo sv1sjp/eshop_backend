@@ -6,11 +6,16 @@
 Για την εκτέλεση του προγράμματος, κρίνεται απαραίτητη η εγκατάσταση του Docker. Για συστήματα βασισμένα στο Debian GNU/Linux δίνουμε:
 
 ```bash
-sudo apt install docker-ce docker-ce-cli containerd.io
+sudo apt install docker docker-compose
 ```
 Το πρόγραμμα θα εκτελείται στην πόρτα 5000 μέσω flask και η Mongodb θα βρίσκεται στην πόρτα 27017. Βεβαιωθείτε ότι δεν τρέχει κάποια άλλη υπηρεσία σε αυτές τις πόρτες.
 
 Στην MongoDB πρακτικά δημιουργήθηκε μία database "DSMarkets" με collections products και users. Στην Collection users υπάρχουν οι χρήστες και οι διαχειριστές του συστήματος καθώς στην product υπάρχουν τα προϊόντα.
+
+Για την δημιουργία του container, κατεβάστε αυτό το directory και εκτελέστε:
+```bash
+docker-compose up -d
+```
 
 ## /createUser
 
@@ -111,9 +116,9 @@ To πρόγραμμα ελέγχει αν το json αρχείο είναι στ
 
 ## /deleteUser
 
-Δίνοντας 0.0.0.0:5000/deleteUser με μέθοδο DELETE, μπορεί ένας user να δει το ιστορικό των παραγγελιών του. 
+Δίνοντας 0.0.0.0:5000/deleteUser με μέθοδο DELETE, μπορεί ένας user να διαγράψει τον λογαριασμό του. 
 
-Δικαίωμα προσθεσης έχει αποκλειστικά χρήστης που έχει κάνει login πρώτα και έχει προστέσει το uuid του ως header στο "authorization". Διαφορετικά, το /deleteUser δεν θα λειτουργήσει.
+Δικαίωμα διαγραφής έχει αποκλειστικά χρήστης που έχει κάνει login πρώτα και έχει προστέσει το uuid του ως header στο "authorization". Διαφορετικά, το /deleteUser δεν θα λειτουργήσει.
 
 ## /addProducts
 
